@@ -34,7 +34,7 @@ translation =
 }
 
 def transpile(program):
-	output = program
+	output = INIT + program
 	for instr in translation.keys():
 		output= output.replace(instr, translation[instr])
 	return output
